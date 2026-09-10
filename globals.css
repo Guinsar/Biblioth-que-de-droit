@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+html {
+  background-color: #f3eee3;
+}
+
+body {
+  color: #2b2620;
+}
+
+::selection {
+  background-color: #7a2a2a;
+  color: #f3eee3;
+}
+
+@layer components {
+  .champ {
+    @apply border border-rule bg-white/60 px-4 py-2 focus:border-wine focus:outline-none;
+  }
+}
